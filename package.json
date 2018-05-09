@@ -1,0 +1,43 @@
+{
+  "name": "judo2mqtt",
+  "version": "0.0.0-development",
+  "description": "A smarthome bridge between Judo iSoft Plus and an mqtt server.",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Tobias Hoff <tobias@die-hoffs.net>",
+  "bin": {
+    "judo2mqtt": "index.js"
+  },
+  "keywords": [
+    "judo",
+    "mqtt-smarthome",
+    "mqtt"
+  ],
+  "preferGlobal": true,
+  "scripts": {
+    "test": "standard && exit 0",
+    "semantic-release": "semantic-release"
+  },
+  "dependencies": {
+    "mqtt": "^2.17.0",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5",
+    "yalm": "^4.1.0",
+    "yargs": "^11.1.0"
+  },
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "semantic-release": "^15.1.4",
+    "standard": "^11.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tosa27/judo2mqtt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tosa27/judo2mqtt/issues"
+  },
+  "pre-commit": [
+    "test"
+  ]
+}
