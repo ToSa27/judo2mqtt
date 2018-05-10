@@ -339,14 +339,16 @@ function publishStatus(device, cmd, data) {
 }
 
 function publishEvent(device, event) {
+  log.debug('publishEvent', device, event);
   var ed = event.split(',');
   mqttClient.publish(config.name + '/event/' + device.wtuType + '/' + ed[1].trim(), JSON.stringify({
     ts: parseInt(ed[0].trim()),
-    val: getEvent(ed)
+    val: getEvent(device, ed)
   }), true);
 }
 
 function getEvent(device, values) {
+  log.debug('getEvent', device, value);
   var data = parseInt(values[1].trim());
   var output = "";
   var identifier;
