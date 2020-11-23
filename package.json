@@ -23,7 +23,7 @@
     "request": "^2.85.0",
     "request-promise-native": "^1.0.5",
     "yalm": "^4.1.0",
-    "yargs": "^11.1.0"
+    "yargs": "^16.0.0"
   },
   "devDependencies": {
     "pre-commit": "^1.2.2",
